@@ -4,15 +4,15 @@
       <meta charset="utf-8">
       <title>Техномарт</title>
    </head>
-   <body class="page-body">
+   <body >
       <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
       <!-- ......................................Шапка.................................... -->
-      <header class="main-header">
-         <nav class="main-navigation">
-            <a href="index.html" class="main-header-logo">
+      <header >
+         <nav >
+            <a href="index.html" >
                <h1>Техномарт</h1>
             </a>
-            <ul class="site-navigation">
+            <ul >
                <li>
                   <form action="https://echo.htmlacademy.ru" method="get">
                      <label for="search">Поиск:
@@ -27,7 +27,7 @@
                   Корзина: 0</a>
                </li>
                <li><a href="">
-               Оформить заказ</a>
+                  Оформить заказ</a>
                </li>
             </ul>
             <ul>
@@ -42,7 +42,7 @@
             <ul>
                <li><a href="">Главная</a></li>
                <li><a href="">Компания</a></li>
-               <li><a href="">Каталог</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
                <li><a href="">Новости</a></li>
                <li><a href="">Спецпредложения</a></li>
                <li><a href="">Доставка</a></li>
@@ -51,9 +51,9 @@
          </nav>
       </header>
       <!-- ......................................Контент................................. -->
-      <main class="center">
+      <main >
          <h1>Каталог</h1>
-         <section class="">
+         <section >
             <h2>Прайс</h2>
             <ul>
                <li>
@@ -76,57 +76,58 @@
                   <h3>Доставка</h3>
                   <button type="button">Бесплатно</button>
                </li>
-               <li class="wrapper">
+               <li >
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <div>
+                  <figure >
                      <img src="img/Layer%2099.png" alt="Перфоратор" width="620" height="266">
-                     <button type="button">Открыть каталог</button>
-                  </div>
+                  </figure>
+                  <button type="button">Открыть каталог</button>
                   <div>
                      <!--Боковые кнопки-->
-                        <button></button>
-                        <button></button>
+                     <button type="button" class="wrapper_button button-left">.</button>
+                     <button type="button" class="wrapper_button button-right">.</button>
                   </div>
                   <div>
                      <!--Радио кнопки-->
-                        <input type="radio" name="slyde_button">
-                        <input type="radio" name="slyde_button">
+                     <button type="button" class="wrapper_button radio-button-left">.</button>
+                     <button type="button" class="wrapper_button radio-button-right">.</button>
                   </div>
                </li>
             </ul>
          </section>
-         <section>
+         <section >
             <h2>Популярные товары:</h2>
-            <a href="" class="button">Все популярные товары</a>
-            <ul>
-               <li>
+            <a href="" >Все популярные товары</a>
+            <ul >
+               <li >
                   <img src="img/snippet-945%20copy%202.png" alt="Бош" width=126 height=137><br>
-                      <button>Купить</button>
-                      <button>В закладки</button>
-                  <p>Перфоратор BOSCH<br>BFG 9000<br><span>32500 Р.</span></p><br>
+                  <button>Купить</button>
+                  <button>В закладки</button>
+                  <p>Перфоратор BOSCH<br>BFG 9000<br><span>32500 Р.</span></p>
+                  <br>
                   <span>22500 Р.</span>
                </li>
-               <li>
+               <li >
                   <img src="img/snippet-18927%20copy%203.png" alt="Бош" width=126 height=137><br>
-                      <button>Купить</button>
-                      <button>В закладки</button>
+                  <button>Купить</button>
+                  <button>В закладки</button>
                   <p>Перфоратор BOSCH<br>BFG 3000<br><span>22500 Р.</span></p>
                   <br>
                   <span>15500 Р.</span>
                </li>
-               <li>
+               <li >
                   <img src="img/snippet-32961%20copy%203.png" alt="Бош" width=126 height=137><br>
-                      <button>Купить</button>
-                      <button>В закладки</button>
+                  <button>Купить</button>
+                  <button>В закладки</button>
                   <p>Перфоратор BOSCH<br>BFG 6000<br><span>30500 Р.</span></p>
                   <br>
                   <span>25500 Р.</span>
                </li>
-               <li>
+               <li >
                   <img src="img/snippet-18927%20copy%203.png" alt="Бош" width=126 height=137><br>
-                      <button>Купить</button>
-                      <button>В закладки</button>
+                  <button>Купить</button>
+                  <button>В закладки</button>
                   <p>Перфоратор BOSCH<br>BFG 2000<br><span>30500 Р.</span></p>
                   <span>12500 Р.</span>
                </li>
@@ -134,7 +135,7 @@
          </section>
          <section>
             <h2>Популярные производители</h2>
-             <a class="button" href="">Все производиели</a>
+            <a  href="">Все производиели</a>
             <ul>
                <li><a href=""><img src="img/bosch.png" alt="Бош" width=126 height=37></a></li>
                <li><a href=""><img src="img/Makita.png" alt="Макита" width=123 height=40></a></li>
@@ -146,23 +147,23 @@
                <li><a href=""><img src="img/Metabo.png" alt="Метабо" width=204 height=69></a></li>
             </ul>
          </section>
-         <section class="features">
+         <section >
             <h2>Сервисы</h2>
-            <div class="fetures-content">
+            <div >
                Хороший интернет-магазин отличается от плохого не только ценами! <br>
                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </div>
             <h2>Доставка</h2>
-            <div class="fetures-content">Мы с удовольствием доставим ваш товар прямо<br> 
+            <div >Мы с удовольствием доставим ваш товар прямо<br> 
                к вашему подъезду совершенно бесплатно!<br>
                Ведь мы неплохо заработаем,<br>
                поднимая его на ваш этаж!
             </div>
-         <div class="features-buttons">
-               <button class="features-buttons_button">Доставка</button>
-               <button class="features-buttons_button">Гарантия</button>
-               <button class="features-buttons_button">Кредит</button>
-         </div>
+            <div >
+               <button >Доставка</button>
+               <button >Гарантия</button>
+               <button >Кредит</button>
+            </div>
          </section>
          <section>
             <h2>Компания "Техномарт"</h2>
@@ -177,17 +178,17 @@
                <li>Автотрейдинг</li>
                <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a href="" class="button">Подробнее о компании</a>
+            <a href="" >Подробнее о компании</a>
          </section>
          <section>
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
             <a href="" ><img src="img/karta.png" alt="карта" width=300 height=158></a><br>
-            <a href="" class="button">Заблудились? Напишите нам</a>
+            <a href="" >Заблудились? Напишите нам</a>
          </section>
       </main>
       <!-- ......................................Футер.................................... -->
-      <footer>
+      <footer >
          <section>
             <div>
                <a href="index.html">
@@ -196,7 +197,7 @@
                <ul>
                   <li><a href="">Компания</a></li>
                   <li><a href="">Новости</a></li>
-                  <li><a href="">Каталог</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
                   <li><a href="">Доставка</a></li>
                   <li><a href="">Контакты</a></li>
                </ul>
@@ -206,9 +207,11 @@
                   <li><a href="">Спецпредложения</a></li>
                </ul>
             </div>
-            <div>
+         </section>
+         <section >
+            <div >
                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                  <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                  <a href="tel:+78125550555" >+7 (812) 555-05-55</a>
                </p>
             </div>
             <div>
