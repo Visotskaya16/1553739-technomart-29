@@ -56,7 +56,7 @@
          <ul >
             <li ><a href="">Каталог</a></li>
             <li ><a href="">Инструменты</a></li>
-            <li c><span>Перфораторы</span></li>
+            <li ><span>Перфораторы</span></li>
          </ul>
       </nav>
       <main>
@@ -69,35 +69,35 @@
                <li><button type="button">По цене</button></li>
                <li><button type="button">По типу</button></li>
                <li><button type="button">По функционалу</button></li>
+               <li><button type="button">Вверх</button></li>
+               <li><button type="button">Вниз</button></li>
             </ul>
          </section>
-         <section>
-            <form action="https://echo.htmlacademy.ru" >
-               <fieldset>
+         <form action="https://echo.htmlacademy.ru" >
+            <fieldset>
+               <div>
                   <span>Цена:</span>
                   <input type="range" min="1" max="30000" id="polzun" value="50">
                   <p>0 - 30000</p>
+               </div>
+               <div>
                   <span>Производители:</span>
                   <input type="checkbox">BOSCH<br>
                   <input type="checkbox">ИНТЕРСКОЛ<br>
                   <input type="checkbox">MAKITA<br>
                   <input type="checkbox">DEWALT<br>
                   <input type="checkbox">HITACHI
+               </div>
+               <div>
                   <span>Питание:</span>
                   <input type="radio" name="difer" id="difer"><label for="difer">Аккумуляторные</label> <br>
                   <input type="radio" name="difer" id="difer2"><label for="difer2">Сетевые</label><br>
-                  <button type="submit" >Показать</button>
-               </fieldset>
-            </form>
-         </section>
-         <section>
-            <h3>Питание: </h3>
-            <form action="https://echo.htmlacademy.ru">
-               <input type="radio" name="difer" id="difer1"><label for="difer1">Аккумуляторные</label> <br>
-               <input type="radio" name="difer" id="difer_2"><label for="difer_2">Сетевые</label><br><br>
-               <button type="button">Показать</button>
-            </form>
-         </section>
+               </div>
+               <div>
+                  <button type="submit">Показать</button>
+               </div>
+            </fieldset>
+         </form>
          <section>
             <h2>Список</h2>
             <ul>
