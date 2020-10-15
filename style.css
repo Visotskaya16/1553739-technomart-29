@@ -41,7 +41,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background-color: skyblue;
 }
 
 a {
@@ -81,6 +81,8 @@ img {
 }
 
 .site-panel a {
+    height: 42px;
+    display: inline-block;
     color: white;
     background-color: var(--basic-greyDark);
     list-style: none;
@@ -175,11 +177,22 @@ img {
 }
 
 .site-description .login a {
+    height: 45px;
+    text-align: center;
+    width: 121px;
+    display: inline-block;
     color: var(--basic-black);
     font-family: 'Cuprum', sans-serif;
     font-weight: normal;
     font-size: 21px;
     line-height: 21px;
+    background-color: white;
+}
+.site-description .login a:hover {
+    color: #EE3643;
+}
+.site-description .login a:focus {
+    color: #C5C5C5;
 }
 
 .site-navigation {
@@ -189,6 +202,9 @@ img {
 }
 
 .site-navigation a {
+    width: auto;
+    height: 60px;
+    display: inline-block;
     font-family: 'Cuprum', sans-serif;
     color: var(--basic-white);
     font-style: normal;
@@ -220,6 +236,7 @@ img {
     line-height: 30px;
     color: var(--basic-white);
     text-transform:none;
+    list-style: none;
 }
 
 .benefits-item-material {
@@ -272,9 +289,14 @@ img {
       color: var(--basic-white);
       vertical-align: middle;
       text-transform: uppercase;
-      background: #FFFFFF;
-      opacity: 0.3;
+      background-color: rgba(255,255,255,0.3);
       border: none;
+}
+.button-catalog:hover {
+    background-color: rgba(197,197,197,0.3);
+}
+.button-catalog:focus {
+    background-color: rgba(169,169,169,0.3);
 }
 
 .benefits-section-list button {
@@ -300,7 +322,81 @@ img {
     text-transform: uppercase;
     border: none;
 }
+.special-button-catalog:hover {
+    background-color: #CA2C37;
+}
+.special-button-catalog:focus {
+    background-color: #BA2732;
+}
 
+.button-slide-left, .button-slide-left:focus,
+.button-slide-right, .button-slide-right:focus {
+    border: none;
+    background-color: transparent;
+}
+
+.radio-button-slide-left {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border: none;
+    
+}
+.radio-button-slide-right {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.buy-button {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--basic-green);
+    color: white;
+    border-radius: none;
+}
+.buy-button:hover {
+    background-color: #5FBB2D;
+    color: white;
+    border-radius: none;
+}
+.buy-button:focus {
+    background-color: #518534;
+    color: white;
+    border-radius: none;
+}
+
+.marked-button {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--basic-green);
+    border-radius: 2px;
+    color: #32425C;
+    background-color: var(--basic-white);
+}
+.marked-button:hover {
+    border: 3px solid #32425C;
+    color: #32425C;
+    background-color: var(--basic-white);
+    border-radius: 2px;
+}
+.marked-button:focus {
+    border: 3px solid #32425C;
+    color: #32425C;
+    background-color: var(--basic-white);
+}
 
 /*..............Популярные товары................*/
 
@@ -310,10 +406,12 @@ img {
     background-color: #F9F5F0;
 }
 
-.hot-product .button,
-.popular-manufacturers .button {
+.hot-product .hot-product-button,
+.popular-manufacturers-button {
     width: 192px;
     height: 38px;
+    text-align: center;
+    display: block;
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -322,6 +420,10 @@ img {
     color: white;
     background-color: var(--basic-redLight);
 }
+.popular-manufacturers .button{
+    
+}
+
 
 .h2 {
     color: #32425C;
@@ -424,6 +526,7 @@ img {
 
 .features .features-buttonss button {
     background-color: #32425C;
+    color: white;
     width: 240px;
     height: 61px;
     border: none;
@@ -448,7 +551,7 @@ img {
 /*................descriprion.................*/
 
 .h2-description, .h2-contacts {
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -457,7 +560,7 @@ img {
 }
 
 .p-description, .p-contacts {
-    font-family: PT Sans;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -465,7 +568,7 @@ img {
 }
 
 .description-list .description-item {
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -473,16 +576,23 @@ img {
     list-style: none;
 }
 
-.description .button-aboutCompany, .button-contacts {
+.description .button-aboutCompany, .contacts .button-contacts {
     width: 192px;
     height: 38px;
     background-color: #EE3643;
+    text-align: center;
+    display: block;
     color: white;
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+}
+
+.contacts .button-contacts {
+    width: 300px;
+    height: 38px;
 }
 
 .description .button-aboutCompany, .button-contacts:hover {
@@ -498,7 +608,7 @@ img {
 .footer-navigation {
     background-color: #32425C;
     color: #F3F7F9;
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -512,7 +622,7 @@ img {
 
 .footer-navigation a {
     color: #F3F7F9;
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -521,11 +631,19 @@ img {
 
 .footer-navigation2 a {
     color: #FFD180;
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+}
+
+.footer-navigation1 a:hover, .footer-navigation2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-navigation1 a:focus, .footer-navigation2 a:focus {
+    opacity: 0.5;
 }
 
 /*.........FOOTER-CONTACTS............*/
@@ -535,7 +653,7 @@ img {
 }
 
 .footer-phone p,  .footer-copyright1 {
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -549,7 +667,7 @@ img {
 
 .footer-social-list a {
     color: black;
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -557,7 +675,7 @@ img {
 }
 
 .footer-adress, .footer-copyright2 {
-    font-family: Cuprum;
+    font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -566,4 +684,162 @@ img {
 
 .footer-adress-color-item1, .footer-copyright2 a {
     color: #FFD180;
+}
+.footer-adress-color-item1:hover, .footer-copyright2 a:hover {
+    text-decoration: underline;
+}
+.footer-adress-color-item1:focus, .footer-copyright2 a:focus {
+    color: #EE3643;
+}
+.footer-adress span :focus {
+    color: #EE3643;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*..................................CATALOG........................*/
+
+.breadcrumb .breadcrumb-item a, .breadcrumb li {
+    color: black;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.h2-perforatots {
+    width: 940px;
+    height: 89px;
+    background-color: #F2F6F8;
+}
+
+.h2-perforatots h2 {
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425C;
+}
+
+.filters {
+    background-color: #F7F3EC;
+    list-style: none;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filters-list {
+    list-style: none;
+}
+
+.filters .filter {
+    width: 220px;
+    height: 38px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filters .sorting {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filters .by-price {
+    color: #EE3643;
+    background: #F7F3EC;
+    border: none;
+}
+
+
+.filters button .by-type {
+    color: #000000;
+    background: #F7F3EC;
+    border: none;
+    opacity: 0.3;
+}
+.filters button .by-type:hover {
+    color: #000000;
+    background: #F7F3EC;
+    border: none;
+}
+.filters button .by-type:focus {
+    color: #EE3643;
+    background: #F7F3EC;
+    border: none;
+}
+
+
+.filters .by-functional {
+    color: #000000;
+    background: #F7F3EC;
+    border: none;
+    opacity: 0.3;
+}
+
+
+.filters li .roll-up, .filters li .roll-down {
+    background: #F7F3EC;
+    border: none;
+    color: #000000;
+}
+.filters li .roll-up, .filters li .roll-down:hover {
+    background-color: #F7F3EC;
+    border: none;
+    color: #000000;
+}
+.filters li .roll-up, .filters li .roll-down :focus {
+    background-color: #F7F3EC;
+    border: none;
+    color: #EE3643;
+}
+
+
+/*..............AdvanceFilters(Расширенные фильтры)................................*/
+
+.advance-filtres {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.advance-filtres .sale, .line-supply {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
 }
