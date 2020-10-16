@@ -68,17 +68,35 @@ img {
     line-height: 24px;
 }
 
+
 /* ..................Main navigation..................... */
 
 .main-header-logo, .main-footer-logo {
+    widows: 220px;
+    height: 47px;
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
     display: inline-block;
     background-color: var(--basic-redLight);
     color: var(--basic-white);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    vertical-align: middle;
 }
 
 .main-header-logo:focus {
     background-color: var(--basic-red-dark);
 }
+
+.search {
+    height: 42px;
+    color: white;
+    background: #293449;
+}
+
 
 .site-panel a {
     height: 42px;
@@ -137,6 +155,7 @@ img {
 .
 
 .site-navigation a {
+    
   background-color: var( --basic-greyLighter);
   color: var(--basic-white);
 }
@@ -178,7 +197,6 @@ img {
 
 .site-description .login a {
     height: 45px;
-    text-align: center;
     width: 121px;
     display: inline-block;
     color: var(--basic-black);
@@ -187,6 +205,8 @@ img {
     font-size: 21px;
     line-height: 21px;
     background-color: white;
+    vertical-align: middle;
+    text-align: center;
 }
 .site-description .login a:hover {
     color: #EE3643;
@@ -202,7 +222,6 @@ img {
 }
 
 .site-navigation a {
-    width: auto;
     height: 60px;
     display: inline-block;
     font-family: 'Cuprum', sans-serif;
@@ -212,6 +231,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     background-color: var(--basic-greyLighter);
+    box-shadow: inset 0px -5px 0px #293449;
 }
 
 .site-navigation a:hover {
@@ -350,6 +370,8 @@ img {
 }
 
 .buy-button {
+    width: 135px;
+    height: 38px;
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -360,7 +382,9 @@ img {
     text-transform: uppercase;
     background-color: var(--basic-green);
     color: white;
-    border-radius: none;
+    border-radius: 2px;
+    border: none;
+    box-shadow: inset 0px -3px 0px #367315;
 }
 .buy-button:hover {
     background-color: #5FBB2D;
@@ -374,6 +398,8 @@ img {
 }
 
 .marked-button {
+    width: 135px;
+    height: 38px;
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -385,6 +411,7 @@ img {
     border-radius: 2px;
     color: #32425C;
     background-color: var(--basic-white);
+    border: 3px solid #63A63E;
 }
 .marked-button:hover {
     border: 3px solid #32425C;
@@ -396,6 +423,7 @@ img {
     border: 3px solid #32425C;
     color: #32425C;
     background-color: var(--basic-white);
+    border-radius: 2px;
 }
 
 /*..............Популярные товары................*/
@@ -605,6 +633,16 @@ img {
 
 /*........FOOTER..............*/
 
+.main-footer-logo {
+    width: 220px;
+    height: 68px;
+    text-align: center;
+    vertical-align: middle;
+}
+.main-footer-logo:focus{
+    background: #BA2732;
+}
+
 .footer-navigation {
     background-color: #32425C;
     color: #F3F7F9;
@@ -691,7 +729,10 @@ img {
 .footer-adress-color-item1:focus, .footer-copyright2 a:focus {
     color: #EE3643;
 }
-.footer-adress span :focus {
+.footer-adress span:focus {
+    color: #EE3643;
+}
+.footer-adress-color-item1:focus {
     color: #EE3643;
 }
 
@@ -754,7 +795,6 @@ img {
 }
 
 .filters {
-    background-color: #F7F3EC;
     list-style: none;
     font-family: 'PT Sans', sans-serif;
     font-style: normal;
@@ -767,7 +807,9 @@ img {
     list-style: none;
 }
 
-.filters .filter {
+.filters-list .filter {
+    background-color: #F7F3EC;
+    display: inline-block;
     width: 220px;
     height: 38px;
     font-style: normal;
@@ -777,54 +819,73 @@ img {
 }
 
 .filters .sorting {
+    color: black;
+    height: 38px;
+    display: inline-block;
+    background-color: #F7F3EC;
     font-size: 13px;
     line-height: 18px;
 }
 
-.filters .by-price {
-    color: #EE3643;
-    background: #F7F3EC;
-    border: none;
-}
-
-
-.filters button .by-type {
-    color: #000000;
-    background: #F7F3EC;
-    border: none;
-    opacity: 0.3;
-}
-.filters button .by-type:hover {
-    color: #000000;
-    background: #F7F3EC;
-    border: none;
-}
-.filters button .by-type:focus {
-    color: #EE3643;
-    background: #F7F3EC;
-    border: none;
-}
-
-
-.filters .by-functional {
-    color: #000000;
-    background: #F7F3EC;
-    border: none;
-    opacity: 0.3;
-}
-
-
-.filters li .roll-up, .filters li .roll-down {
-    background: #F7F3EC;
-    border: none;
-    color: #000000;
-}
-.filters li .roll-up, .filters li .roll-down:hover {
+.filters-list .by-price {
+    height: 38px;
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
     background-color: #F7F3EC;
     border: none;
-    color: #000000;
 }
-.filters li .roll-up, .filters li .roll-down :focus {
+.filters-list .by-price:hover {
+    color: black;
+    text-decoration: underline solid #EE3643;
+}
+.filters-list .by-price:focus{
+    color: #EE3643;
+}
+
+
+.filters-list .by-type {
+    height: 38px;
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
+    background-color: #F7F3EC;
+    border: none;
+}
+.filters-list .by-type:hover {
+    color: black;
+    text-decoration: underline solid #EE3643;
+}
+.filters-list .by-type:focus {
+    color: #EE3643;
+}
+
+
+.filters-list .by-functional {
+    height: 38px;
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
+    background-color: #F7F3EC;
+    border: none;
+}
+.filters-list .by-functional:hover {
+    color: black;
+    text-decoration: underline solid #EE3643;
+}
+.filters-list .by-functional:focus {
+    color: #EE3643;
+}
+
+
+.filters-list .roll-up, .filters-list .roll-down {
+    background: #F7F3EC;
+    border: none;
+    color: #C5C5C5;
+}
+.filters-list .roll-up:hover, .filters-list .roll-down:hover {
+    background-color: #F7F3EC;
+    border: none;
+    color: black;
+}
+.filters-list .roll-up:focus, .filters-list .roll-down:focus {
     background-color: #F7F3EC;
     border: none;
     color: #EE3643;
