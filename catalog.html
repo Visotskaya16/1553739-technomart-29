@@ -50,8 +50,8 @@
                   <a href=""></a>
                   </div>
                   <div class="subscript">
-               <a href="" class="My orders">Мои заказы</a>
-               <a href="" class="personal office">Личный кабинет</a>
+               <a href="" class="My-orders">Мои заказы</a>
+               <a href="" class="personal-office">Личный кабинет</a>
                </div>
             </section>
             <ul class="site-navigation">
@@ -93,9 +93,11 @@
             <form action="https://echo.htmlacademy.ru" >
                <fieldset>
                   <span class="sale">Цена:</span>
-                  <input type="range" min="1" max="30000" id="polzun" value="50">
-                  <p>0 - 30000</p>
-                  <span>Производители:</span>
+                  <input type="range" min="1" max="30000" id="polzun" value="50" class="sale-div">
+                  <div class="container0-3000">
+                  <span class="CostFrom0">0</span><span class="Hyphen">-</span><span class="CostTill3000"> 30000</span>
+                  </div>
+                  <h3 class="EquipManufacturers">Производители:</h3>
                   <input type="checkbox">BOSCH<br>
                   <input type="checkbox">ИНТЕРСКОЛ<br>
                   <input type="checkbox">MAKITA<br>
@@ -104,18 +106,21 @@
                   <span>Питание:</span>
                   <input type="radio" name="difer" id="difer"><label for="difer">Аккумуляторные</label> <br>
                   <input type="radio" name="difer" id="difer2"><label for="difer2">Сетевые</label><br>
-                  <button type="submit" >Показать</button>
+                  <h3 class="line-supply">Питание: </h3>
+               <input type="radio" name="difer" id="difer1"><label for="difer1">Аккумуляторные</label> <br>
+               <input type="radio" name="difer" id="difer_2"><label for="difer_2">Сетевые</label><br><br>
+               <button type="submit" class="button-advance-filtres">Показать</button>
                </fieldset>
             </form>
          </section>
-         <section>
+      <!--   <section>
             <h3 class="line-supply">Питание: </h3>
             <form action="https://echo.htmlacademy.ru">
                <input type="radio" name="difer" id="difer1"><label for="difer1">Аккумуляторные</label> <br>
                <input type="radio" name="difer" id="difer_2"><label for="difer_2">Сетевые</label><br><br>
                <button type="button">Показать</button>
             </form>
-         </section>
+         </section>   -->
          <section>
             <h2>Список</h2>
             <ul class="popular-products-list">
@@ -186,10 +191,10 @@
                <a class="active" href="">1</a>
                <a href="">2</a>
                <a href="">3</a>
-               <a href="">Следующая</a>
+               <a href="" class="next">Следующая</a>
             </div>
          </section>
-         <section>
+         <section class="about-perforators">
             <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
             <p>
                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -199,49 +204,49 @@
          </section>
       </main>
       <!-- ......................................Футер.................................... -->
-      <footer>
-         <section>
-            <div>
-               <a href="index.html">
-                  <h2>Техномарт</h2>
-               </a>
-               <ul>
-                  <li><a href="">Компания</a></li>
-                  <li><a href="">Новости</a></li>
-                  <li><a href="">Каталог</a></li>
-                  <li><a href="">Доставка</a></li>
-                  <li><a href="">Контакты</a></li>
-               </ul>
-               <ul>
-                  <li><a href="">Материалы</a></li>
-                  <li><a href="">Техника</a></li>
-                  <li><a href="">Спецпредложения</a></li>
-               </ul>
-            </div>
-            <div>
-               <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                  <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <footer class="page-footer main-footer">
+         <section class="footer-navigation">
+            <a href="index.html" class="main-footer-logo">
+               <p style="text-transform: uppercase">Техномарт</p>
+            </a>
+            <ul class="footer-navigation1">
+               <li><a href="" class="item">Компания</a></li>
+               <li><a href="">Новости</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="">Доставка</a></li>
+               <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="footer-navigation2">
+               <li><a href="" class="item" >Материалы</a></li>
+               <li><a href="">Техника</a></li>
+               <li><a href="">Спецпредложения</a></li>
+            </ul>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                  <a href="tel:+78125550555" >+7 (812) 555-05-55</a>
                </p>
+         </section>
+         <section class="footer-contacts">
+            <div class="footer-phone">
             </div>
-            <div>
+            <P class="footer-copyright1">
                © 2010–2019 Компания «Техномарт»<br>
                Все права защищены
-            </div>
-            <div>
-               <ul>
-                  <li><a href="">VK</a></li>
-                  <li><a href="">FB</a></li>
-                  <li><a href="">INST</a></li>
+            </P>
+            <div class="footer-social">
+               <ul class="footer-social-list">
+                  <li><a href="" class="social-button">Vk</a></li>
+                  <li><a href="" class="social-button">Facebook</a></li>
+                  <li><a href="" class="social-button">Inst</a></li>
                </ul>
             </div>
-            <div>
+            <div class="footer-adress">
                <p>Обратная связь:<br>
-                  mail@htmlacademy.ru
+                  <a href="mailto:mail@htmlacademy.ru" class="footer-adress-color-item1">mail@htmlacademy.ru</a>
                </p>
             </div>
-            <div>
+            <div class="footer-copyright2">
                <p>Разработано —<br>
-                  <a href="https://htmlacademy.ru/study">htmlacademy.ru</a>
+                  <a href="https://htmlacademy.ru/study" class="button copyright">htmlacademy.ru</a>
                </p>
             </div>
          </section>
