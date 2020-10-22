@@ -99,11 +99,21 @@ img {
     display: flex;
 }
 
-.search {
+.site-panel .search {
     height: 42px;
     color: white;
     background: #293449;
 }
+
+.Magnifier-img {
+    color: red;
+}
+
+.Magnifier-img:hover {
+    background-color: white;
+}
+
+input[type="search"]::placeholder { color: white; }
 
 .upper-panel {
     width: 100%;
@@ -861,11 +871,19 @@ img {
 .filters-list {
     list-style: none;
     display: flex;
+    
 }
 
 .filters-list li {
     align-items: center;
     display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .filters-list .filter {
@@ -879,6 +897,7 @@ img {
     line-height: 18px;
     display: flex;
     align-items: center;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .filters .sorting {
@@ -892,12 +911,28 @@ img {
     align-items: center;
 }
 
+.filters-list .by-price,
+.filters-list .by-type,
+.filters-list .by-functional,
+.filters-list .sorting,
+.filters-list .filter {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+
 .filters-list .by-price {
     height: 38px;
     display: inline-block;
     color: rgba(0,0,0,0.3);
     background-color: #F7F3EC;
     border: none;
+    text-decoration: underline solid #EE3643;
 }
 .filters-list .by-price:hover {
     color: black;
@@ -905,6 +940,7 @@ img {
 }
 .filters-list .by-price:focus{
     color: #EE3643;
+    text-decoration: none;
 }
 
 
@@ -914,6 +950,7 @@ img {
     color: rgba(0,0,0,0.3);
     background-color: #F7F3EC;
     border: none;
+    text-decoration: underline solid #EE3643;
 }
 .filters-list .by-type:hover {
     color: black;
@@ -921,6 +958,7 @@ img {
 }
 .filters-list .by-type:focus {
     color: #EE3643;
+    text-decoration: none;
 }
 
 
@@ -930,6 +968,7 @@ img {
     color: rgba(0,0,0,0.3);
     background-color: #F7F3EC;
     border: none;
+    text-decoration: underline solid #EE3643;
 }
 .filters-list .by-functional:hover {
     color: black;
@@ -937,6 +976,7 @@ img {
 }
 .filters-list .by-functional:focus {
     color: #EE3643;
+    text-decoration: none;
 }
 
 
@@ -959,8 +999,30 @@ img {
 
 /*..............AdvanceFilters(Расширенные фильтры)................................*/
 
-.advance-filtres {
+.advance-filtres  {
     font-family: 'PT Sans', sans-serif;
+}
+
+.advance-filtres .sale, 
+.advance-filtres .EquipManufacturers,
+.advance-filtres .pitaniye,
+.advance-filtres .line-supply{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.firma {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
 }
 
 .advance-filtres .sale, .line-supply {
@@ -980,9 +1042,10 @@ img {
     display: flex;
     align-items: center;
 }
-.CostFrom0 {
+.CostFromZero {
     width: 95px;
     height: 38px;
+    font-family: 'PT Sans', sans-serif;
     display: inline-block;
     background-color: #F7F3EC;
     display: flex;
@@ -1032,6 +1095,12 @@ img {
     align-items: center;
     justify-content: center;
     border: 1px solid #E5E5E5;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 .pagination {
@@ -1056,6 +1125,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 .pagination a:hover {
     border: 1px solid #C5C5C5;
@@ -1083,12 +1158,21 @@ img {
     font-weight: normal;
     color: #000000;
 }
-.about-perforators h2 {
+.h2-about-perforators {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
 }
-.about-perforators p {
+p-about-perforators {
+    font-family: 'PT Sans' , sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+    color: black;
 }
