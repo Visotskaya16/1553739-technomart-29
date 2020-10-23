@@ -719,12 +719,22 @@ input[type="search"]::placeholder { color: white; }
     background-color: #293449;
 }
 
-.footer-phone p,  .footer-copyright1 {
+.footer-phone p {
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    color: #F3F7F9;
+}
+
+.footer-copyright1 {
+    font-family: 'Cuprum' , sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
     color: #F3F7F9;
 }
 
@@ -765,6 +775,9 @@ input[type="search"]::placeholder { color: white; }
     color: #EE3643;
 }
 
+.footer-adress p, .footer-copyright2 p {
+    color: white;
+} 
 
 
 
@@ -1051,13 +1064,16 @@ input[type="search"]::placeholder { color: white; }
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
 }
 .Hyphen {
     width: 30px;
     height: 18px;
+    font-family: 'PT Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
     
 }
 .CostTill3000 {
@@ -1068,6 +1084,7 @@ input[type="search"]::placeholder { color: white; }
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
 }
 
 .EquipManufacturers {
@@ -1162,11 +1179,12 @@ input[type="search"]::placeholder { color: white; }
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum' , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
 }
 p-about-perforators {
     font-family: 'PT Sans' , sans-serif;
@@ -1175,4 +1193,5 @@ p-about-perforators {
     font-size: 13px;
     line-height: 24px;
     color: black;
+    font-weight: 400;
 }
