@@ -1186,7 +1186,7 @@ input[type="search"]::placeholder { color: white; }
     line-height: 30px;
     font-weight: 400;
 }
-p-about-perforators {
+.p-about-perforators {
     font-family: 'PT Sans' , sans-serif;
     font-style: normal;
     font-weight: normal;
