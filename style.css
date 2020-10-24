@@ -99,21 +99,46 @@ img {
     display: flex;
 }
 
+/*            ...... ...here....    ......             */
 .site-panel .search {
     height: 42px;
     color: white;
     background: #293449;
 }
-
-.Magnifier-img {
-    color: red;
+.site-panel .li-search {
+    height: 42px;
+    color: white;
+    background: #293449;
+    background-image:url(img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
 }
 
-.Magnifier-img:hover {
-    background-color: white;
+.site-panel .li-search:hover {
+    background-image:url(img/icon-search-white.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 input[type="search"]::placeholder { color: white; }
+
+
+.site-panel .search:hover ~ .site-panel .li-search { 
+     background: white;
+     background-image: url(img/icon-search-red.svg);
+}
+/*            ...... ...here....    ......             */
+
+.site-panel .bookmark {
+    width: 150px;
+    background-image: url(img/icons/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.site-panel .bookmark:hover {
+    background-image: url(img/icons/icon-bookmark-white.svg);
+}
 
 .upper-panel {
     width: 100%;
