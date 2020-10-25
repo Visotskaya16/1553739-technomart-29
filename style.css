@@ -68,7 +68,7 @@ img {
 /* ..................Main navigation..................... */
 
 .main-header-logo, .main-footer-logo {
-    widows: 220px;
+    width: 220px;
     height: 47px;
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
@@ -84,7 +84,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(img/icons/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px;
+    display: block;
 }
+
+.main-footer-logo p {
+    height: 68px;
+    display: block;
+    font-size: 0px;
+}
+
 
 .main-header-logo:focus {
     background-color: var(--basic-red-dark);
@@ -99,36 +111,56 @@ img {
     display: flex;
 }
 
-/*            ...... ...here....    ......             */
-.site-panel .search {
-    height: 42px;
-    color: white;
-    background: #293449;
-}
-.site-panel .li-search {
+/*            ...... ...Панель-начало....    ......             */
+
+.label-search {
     height: 42px;
     color: white;
     background: #293449;
     background-image:url(img/icon-search.svg);
     background-repeat: no-repeat;
     background-position: left;
-    padding-left: 25px;
+    padding-left: 20px;
+    display: block;
+    font-size: 0px;
+    order: 1;
+}
+.site-panel .input-search {
+    height: 42px;
+    color: white;
+    background: #293449;
+    order: 2;
 }
 
-.site-panel .li-search:hover {
+.input-search:hover + .label-search {
     background-image:url(img/icon-search-white.svg);
     background-repeat: no-repeat;
     background-position: left;
+    color: white;
+    background-color: #293449;
+}
+
+.input-search:active + .label-search {
+    background-image:url(img/icon-search.svg);
+}
+
+.input-search:focus {
+    color: black;
+    background-color: white;
+}
+
+.input-search:focus + .label-search {
+    background-image:url(img/icon-search-red.svg);
+    background-color: white;
 }
 
 input[type="search"]::placeholder { color: white; }
 
+input:active[type="search"]::placeholder { color: rgba(255, 255, 255, 0.5); }
 
-.site-panel .search:hover ~ .site-panel .li-search { 
-     background: white;
-     background-image: url(img/icon-search-red.svg);
-}
-/*            ...... ...here....    ......             */
+input:focus[type="search"]::placeholder { color: black; }
+
+/*            ...... ...Панель-Конец....    ......             */
 
 .site-panel .bookmark {
     width: 150px;
